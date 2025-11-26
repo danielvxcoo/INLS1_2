@@ -38,7 +38,7 @@ header {
     align-items: center;
 }
 
-header a {
+header a, section.faq a {
     background-color: #FFF8D4;
     border: 1px solid red;
     color: #435663;
@@ -49,7 +49,7 @@ header a {
     border: none;
 }
 
-header a:hover {
+header a:hover, section.faq a:hover {
     background-color: #fff;
     border: 1px solid red;
     color: red;
