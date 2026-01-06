@@ -41,6 +41,11 @@ div.single_contact, div.single_comment {
     margin-bottom: 0;
 }
 
+div.accordion {
+    width: 100%;
+    max-width: 728px;
+}
+
 section.map iframe {
     width: 100%;
     max-width: 728px;

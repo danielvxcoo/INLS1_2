@@ -197,10 +197,62 @@ section.contact i {
     margin: 2px;
 }
 
+/* sekcja faq */
+section.faq {
+    padding: 10px;
+}
 
+div.accordion {
+    width: 100%;
+    margin-top: 5px;
+}
+
+div.box {
+    margin: 10px 5px;
+    border-top: 1px solid black;
+}
+
+div.box:last-child {
+    margin: 10px 5px ;
+    border-bottom: 1px solid black;
+}
+
+button.accordion_button {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button.accordion_button:hover {
+    cursor: pointer;
+}
+
+.fa-chevron-down {
+    transition: 0.3s;
+}
+
+.info {
+    display: none;
+    transition: 0.3s;
+}
+
+.active_accordion_box {
+    display: block;
+}
+
+.active_accordion_btn {
+    transform: rotate(180deg) ;
+}
 /* sekcja mapy */
 section.map {
-    padding: 20px 10px;
+    padding: 10px;
 }
 
 section.map iframe {
