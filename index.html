@@ -26,12 +26,44 @@
     <!--tutaj jest wszstko co widzi przegladarka-->
     <header>
         <div class="word">
-            <h1>Przewodnik po Japonii</h1>
-            <h2>Poznaj z nami Japonię</h2>
+            <h1>Przewodnik po Tokio</h1>
+            <h2>Poznaj z nami Tokio</h2>
         </div>
         <a href="#main">Czytaj Więcej</a>
     </header>
-    <main> <!--ZDJECIA I LINK DO DALSZEGO CZYTANIA-->
+    <main>
+        <!--sekcja pogody-->
+        <section class="weather_section flex_column_container">
+        <h2 class="h2">Sprawdź pogodę w Tokio</h2>
+        <div class="weather">
+            <div class="weather_info">
+                <div class="sun">
+                    <div class="sunrise flex_row_container">
+                        <img src="./img/sunrise.png" alt="" width="30">
+                        <p class="sunrise_hour"></p>
+                    </div>
+                    <div class="sunset flex_row_container">
+                        <img src="./img/sunset.png" alt="" width="30">
+                        <p class="sunset_hour"></p>
+                    </div>
+                </div>
+                <div class="icon flex_row_container">
+                    <img src="" alt="" class="weather_img">
+                    <p class="temp"></p>
+                    <p class="weather_description"></p>
+                </div>
+            </div>
+            <div class="rest_weather_info">
+                <p>temperatura odczuwalna: <span class="feels_like"></span></p>
+                <p>ciśnienie:<span class="pressure"></span></p>
+                <p>wilgostność:<span class="humidity"></span></p>
+                <p>prędkość wiatru:<span class="wind_speed"></span></p>
+                <p>zachmurzenie:<span class="clouds"></span></p>
+                <p>widoczność:<span class="visibility"></span></p>
+            </div>
+        </div>
+        </section>
+        <!--ZDJECIA I LINK DO DALSZEGO CZYTANIA-->
         <section id="main" class="places_to_see flex_column_container">
             <h2 class="h2">Miejsca warte odwiedzenia</h2>
             <div class="all_places_to_see">
@@ -215,7 +247,9 @@
             <p>Autor: Daniel Nowiński numer albumu/indeksu </p>
         </div>
     </footer>
-
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./script.js"></script>
 </body>
 
