@@ -33,12 +33,12 @@ header {
     width: 100%;
     height: 100vh;
     padding: 10px;
-    background-image: url('https://cdn.pixabay.com/photo/2017/03/02/15/20/saganoseki-2111568_1280.jpg');
+    background-image: url('https://cdn.pixabay.com/photo/2023/04/19/19/11/lake-7938396_1280.jpg');
     background-repeat: no-repeat;
     background-position: 70% 17%;
     background-size: cover;
     background-attachment: fixed;
-    color: white;
+    color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -47,21 +47,20 @@ header {
 
 header a,
 section.faq a {
-    background-color: #FFF8D4;
-    border: 1px solid red;
+    background-color: #f3f2f2;
+    border: 1px solid rgb(255, 255, 255);
     color: #435663;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 20px;
     margin-bottom: 20px;
     border: none;
 }
 
 header a:hover,
 section.faq a:hover {
-    background-color: #fff;
-    border: 1px solid red;
-    color: red;
+    background-color: #fbf2c7;
+    border: 1px solid rgb(255, 255, 255);
+    color: #394e5c;
     transition: 0.3s;
     border: none;
 }
@@ -82,6 +81,15 @@ div.weather_info .temp {
     font-size: 40px;
 }
 
+div.rest_weather_info {
+    font-size: 13px;
+    background-color: #f3f2f2;
+    background-size: cover;
+    width: 100%;
+    margin: 10px 10px 10px 10px;
+    border-radius: 20px;
+}
+
 div.sun {
     width: 100%;
     display: flex;
@@ -95,6 +103,9 @@ div.sun {
 
 section.places_to_see {
     padding: 10px;
+    background-color: #f3f2f2;
+    color: #435663;
+    border-radius: 20px;    
 }
 
 div.single_place {
@@ -107,13 +118,14 @@ div.single_place img {
 }
 
 div.single_place a {
-    background-color: #FFF8D4;
+    background-color: #e9e9e9;
     border: 1px solid red;
     color: #435663;
     padding: 10px 20px;
     text-decoration: none;
-    border-radius: 20px;
     border: none;
+    border-radius: 10px;
+    margin-top: 10px;
 }
 
 div.single_place a:hover {
@@ -127,7 +139,7 @@ div.single_place a:hover {
 /* komentzrze */
 
 section.comments {
-    background-image: url('https://cdn.pixabay.com/photo/2017/03/02/15/20/saganoseki-2111568_1280.jpg');
+    background-image: url('https://i.pinimg.com/736x/1b/f3/8e/1bf38e1b6c01b715f99cf8af1d96ced5.jpg');
     background-repeat: no-repeat;
     background-position: 70% 17%;
     background-size: cover;
@@ -137,9 +149,10 @@ section.comments {
 }
 
 section.comments .single_comment {
-    background-color: #ffffff36;
+    background-color: #00000061;
     padding: 20px;
     margin-bottom: 20px;
+    border-radius: 20px;
 }
 
 section.comments .single_comment p:first-child {
@@ -156,7 +169,6 @@ section.comments .single_comment p:last-child {
 /* sekcja newslettera */
 
 section.newsletter {
-    background-color: #A3B087;
     padding: 20px;
 }
 
@@ -170,7 +182,7 @@ section.newsletter p {
 }
 
 section.newsletter form button {
-    background-color: #FFF8D4;
+    background-color: #f3f2f2;
     border: 1px solid #435663;
     color: #435663;
     padding: 10px 20px;
@@ -182,9 +194,9 @@ section.newsletter form button {
 }
 
 section.newsletter form input {
-    background-color: #FFF8D4;
+    background-color: #f3f2f2;
     border: 1px solid #435663;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 10px 0 10px 10px;
     text-decoration: none;
     border-radius: 20px;
@@ -198,8 +210,8 @@ section.newsletter form input {
 }
 
 section.newsletter form button:hover {
-    background-color: #ddd7ba border 1px solid red;
-    color: #435663;
+    background-color: #fbf2c7 border 1px solid rgb(255, 255, 255);
+    color: #2c3a43;
     transition: 0.3s;
     border: none;
 }
@@ -221,8 +233,8 @@ section.newsletter form button:hover {
 
 section.contact i {
     font-size: 50px;
-    color: #A3B087;
-    border: 5px solid #FFF8D4;
+    color: #435663;
+    border: 5px solid #f3f2f2;
     padding: 10px;
     border-radius: 50%;
     width: 80px;
@@ -297,15 +309,38 @@ section.map iframe {
 /* footer */
 footer {
     text-align: center;
-    background-color: black;
-    color: white
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    background-color: #ffffff;
+    border-radius: 20px;
 }
 
 div.social_media {
-    border-bottom: 1px solid purple;
     margin-bottom: 20px;
 }
 
 div.autor {
-    margin-top: 30px solid purple;
+    margin-top: 30px solid black;
+    margin-bottom: 30px solid black ;
+}
+
+.flex_column {
+    width: 100%;
+}
+
+.text_miejsca {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #e2e2e2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+}
+
+.tekst_pop {
+    font-size: 20px;
+    color: f3f2f2;
+    font-weight: bold;
+    margin: 5px 5px 5px 5px;
 }
