@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://kit.fontawesome.com/c2e439854d.js" crossorigin="anonymous"></script>
+    <!--ikony z fontawesome z kodu-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link do umieszczania favicon-->
+    <link rel="shortcut icon" href="./img/Japan.png" type="image/x-icon">
+    <!--tytuł strony-->
+    <title>Przewodnik po Japonii</title>
+    <!--biblioteka fontów-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!--Własne style css-->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" media="screen and (min-width:768px)" href="./css/medium.css">
+    <link rel="stylesheet" media="screen and (min-width:992px)" href="./css/large.css">
+</head>
+
+<body>
+    <!--tutaj jest wszstko co widzi przegladarka-->
+    <header>
+        <div class="flex_column_container">
+            <h1 class="">JAPONIA</h1> <h4>POZNAJ Z NAMI</h4>
+            <h3 class="">KRAJ KWITNĄCEJ WIŚNI</h3>
+        </div>
+        <a href="#main">Czytaj Więcej</a>
+    </header>
+    <main>
+        <!--sekcja pogody-->
+        <section class="weather_section flex_column_container">
+        <h2 class="h2">POGODA W TOKIO</h2>
+        <div class="weather">
+            <div class="weather_info">
+                <div class="sun">
+                    <div class="sunrise flex_row_container">
+                        <img src="./img/sunrise.png" alt="" width="30">
+                        <p class="sunrise_hour"></p>
+                    </div>
+                    <div class="sunset flex_row_container">
+                        <img src="./img/sunset.png" alt="" width="30">
+                        <p class="sunset_hour"></p>
+                    </div>
+                </div>
+                <div class="icon flex_row_container">
+                    <img src="" alt="" class="weather_img">
+                    <p class="temp"></p>
+                    <p class="weather_description"></p>
+                </div>
+            </div>
+            <div class="rest_weather_info flex_column_container">
+                <p>temperatura odczuwalna: <span class="feels_like"></span></p>
+                <p>ciśnienie: <span class="pressure"></span></p>
+                <p>wilgostność: <span class="humidity"></span></p>
+                <p>prędkość wiatru: <span class="wind_speed"></span></p>
+                <p>zachmurzenie: <span class="clouds"></span></p>
+                <p>widoczność: <span class="visibility"></span></p>
+            </div>
+        </div>
+        </section>
+        <!--ZDJECIA I LINK DO DALSZEGO CZYTANIA-->
+        <section id="main" class="places_to_see flex_column_container flex_column">
+            <h2 class="flex_column_container">WARTE ODWIEDZENIA</h2>
+            <div class="all_places_to_see">
+                <div class="single_place flex_column_container">
+                    <h3 class="h2">Skytree</h3>
+                    <img src="./img/nature-of-tokyo-skytree-2496153_1280.jpg"
+                        alt="nature-of-tokyo-skytree-2496153_1280">
+                    <p class="text_miejsca">Wieża telewizyjna i widokowa w tokijskiej dzielnicy Sumida w Japonii.</p>
+                    <a href="https://pl.wikipedia.org/wiki/Tokyo_Skytree">Czytaj Więcej</a>
+                </div>
+                <div class="single_place flex_column_container">
+                    <h3>Pagoda</h3>
+                    <img src="./img/temple-1841296_1280.jpg" alt="temple-1841296_1280">
+                    <p class="text_miejsca">W buddyjskiej architekturze sakralnej na Dalekim Wschodzie (Chiny, Korea, Nepal i Japonia) rodzaj wielokondygnacyjnej wieży, służącej do przechowywania relikwii.</p>
+                    <a href="https://pl.wikipedia.org/wiki/Pagoda">Czytaj Więcej</a>
+                </div>
+                <div class="single_place flex_column_container">
+                    <h3>Nara Park</h3>
+                    <img src="./img/japan-3885917_1280.jpg" alt="japan-3885917_1280">
+                    <p class="text_miejsca">Rozległy obszar o powierzchni ponad 500 hektarów, położony u stóp wzgórz Nary, znany przede wszystkim z setek swobodnie biegających jeleni oraz cennych zabytków wpisanych na listę UNESCO.</p>
+                    <a href="https://en.wikipedia.org/wiki/Nara_Park">Czytaj Więcej</a>
+                </div>
+                <div class="single_place flex_column_container">
+                    <h3>Fudżi</h3>
+                    <img src="./img/mount-fuji-8010752_1280.jpg" alt="mount-fuji-8010752_1280">
+                    <p class="text_miejsca">Czynny stratowulkan i zarazem najwyższy szczyt Japonii. Leży na wyspie Honsiu, na południowy zachód od stolicy, Tokio.</p>
+                    <a href="https://pl.wikipedia.org/wiki/Fudżi">Czytaj Więcej</a>
+                </div>
+            </div>
+        </section>
+        <section class="flex_column_container comments">
+            <secion>
+                <h2 class="h2">Zobacz co o nas piszą</h2>
+                <div class="all_comments">
+                    <div class="flex_column_container single_comment">
+                        <p>Świetna usługa! Strona jest bardzo intuicyjna i przejrzysta. Informacje rzetelne, regularnie aktualizowane. Przewodniki tworzone z pasią i dbałością o szczegóły. Niezbędne narzędzie do planowania podróży. Polecam!</p>
+                        <p class="tekst_pop">Paulina Lewańczyk</p>
+                        <span style="font-size:200%;color:white;">★★★★★</span>
+                    </div>
+
+                    <div class="flex_column_container single_comment">
+                        <p>Doskonała jakość treści. Artykuły są merytoryczne i głębokie, wykraczają poza typowe turystyczne szlaki. Brak natrętnych reklam. Usługa na wysokim poziomie. Przydałaby się bardziej zaawansowana mapa dla szybszej nawigacji. Ogólnie bardzo dobra.</p>
+                        <p class="tekst_pop">Magdalena Weraczak</p>
+                        <span style="font-size:200%;color:white;">★★★★★</span>
+                    </div>
+
+                    <div class="flex_column_container single_comment">
+                        <p>Usługa na medal pod względem praktycznym. Konkretne informacje (ceny, dojazdy, godziny) zawsze aktualne. Strona szybka i responsywna (działa świetnie na telefonie). Oszczędza czas i nerwy. Brak bezpośrednich rezerwacji to jedyny mankament. Polecam każdemu turyście.</p>
+                        <p class="tekst_pop">Patryk Jodłowiec</p>
+                        <span style="font-size:200%;color:white;">★★★★★</span>
+
+                </div>
+
+            </secion>
+        </section>
+        <section class="newsletter"> <!--newsletter-->
+            <secion>
+                <div class="newsletter_box">
+                    <h2>NEWSLETTER</h2>
+                    <p>Zapisz się na nasz newsletter i bądź na bieżącoz naszymi ofertami i promocjami</p>
+                    <form action="">
+                        <div>
+                            <input type="text" placeholder="imię">
+                            <input type="email" placeholder="email">
+                        </div>
+                        <div class="">
+                            <label for=""><input type="checkbox" >Zapoznałem się z regulaminem i akceptuję go</label>
+                        </div>
+                        <button>Zapisz się!</button>
+                    </form>
+                </div>
+
+            </secion>
+
+        </section>
+
+        <section class="contact flex_column_container"> <!--sekcja kontaktu-->
+            <h2>Skontaktuj się z nami</h2>
+            <div class="all_contact">
+                <div class="flex_column_container">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="text_miejsca">Ul. Fiołkowa 16, 08-332 Gdynia</p>
+                </div>
+                <div class="flex_column_container">
+                    <i class="fa-solid fa-envelope"></i>
+                    <p class="text_miejsca">PrzewodnikpoJaponii@gmail.com</p>
+                </div>
+                <div class="flex_column_container">
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="text_miejsca">+48 783 631 882</p>
+                </div>
+            </div>
+        </section>
+        <!--sekcja  faQ-->
+        <section class="faq flex_column_container">
+            <h2 class="h2">FAQ</h2>
+            <div class="acordion">
+                <div class="box">
+                    <button class="accordion_button">
+                        <p>Czy do Japonii potrzebny jest paszport</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="info">
+                        <p class="text">Przy wjeździe bez wizy paszport powinien być ważny przynajmniej na okres planowanego pobytu w Japonii, dodatkowy okres ważności nie jest wymagany. W przypadku wjazdu na podstawie wizy odpowiednio dłużej, tak aby umożliwiał powrót do kraju jeszcze w okresie ważności paszportu.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <button class="accordion_button">
+                        <p>Ile kosztuje 10-dniowy pobyt w Japonii</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="info">
+                        <p class="text">Wycieczka do Japonii na 10 dni kosztuje orientacyjnie od 8 000 zł do ponad 20 000 zł na osobę, w zależności od stylu podróżowania: najtaniej z tanimi lotami i noclegami (ok. 8-10 tys. zł), ale wycieczki zorganizowane, zwłaszcza objazdowe, to już 15 000 - 20 000 zł i więcej.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <button class="accordion_button">
+                        <p>Jak długo trwa lot do Japonii</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="info">
+                        <p class="text">Lot do Japonii z Polski trwa średnio 11-12 godzin w przypadku lotów bezpośrednich do Tokio, ale z przesiadkami podróż wydłuża się zazwyczaj do 13-20 godzin, w zależności od trasy i czasu oczekiwania.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <button class="accordion_button">
+                        <p>Z czego słynie Japonia</p>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                    <div class="info">
+                        <p class="text">Japonia słynie z unikalnego połączenia tradycji i nowoczesności, oferując światu kulturę samurajów, gejsz, ceremonii parzenia herbaty i sztuki mangi/anime, a jednocześnie będąc globalnym liderem w dziedzinie technologii, robotyki i superszybkich pociągów Shinkansen.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="">Zobacz więcej FAQ</a>
+        </section>
+
+
+        <!--mapa-->
+        <section class="map flex_column_container">
+            <h2 class="h2 flex_column_container">Zobacz mapę Tokio</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13695550.48327276!2d126.54907208984244!3d33.06593666799833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2sJaponia!5e0!3m2!1spl!2spl!4v1761734871949!5m2!1spl!2spl"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <footer class="flex_column_container">
+        <div class="social_media">
+
+            <a href="https://facebook.com" target="_blank"><img src="./img/facebooklogo.png"></a>
+            <a href="https://instagram.com" target="_blank"><img src="./img/intstagra.png"></a>
+            <a href="https://youtube.com" target="_blank"><img src="./img/youtube.png"></a>
+            <a href="https://tiktok.com" target="_blank"><img src="./img/tiktok.png"></a>
+            <a href="https://redit.com" target="_blank"><img src="./img/redit.png"></a>
+            <a href="https://whatsapp.com" target="_blank"><img src="./img/whatsapp.png"></a>
+
+        </div>
+        <div class="autor">
+            <p>Projekt WSB Merito Gdańsk 2025</p>
+            <p>Autor: Daniel Nowiński 91186 </p>
+        </div>
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

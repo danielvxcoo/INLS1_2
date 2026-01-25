@@ -1,0 +1,9 @@
+/* 982px */
+
+div.all_places_to_see {
+    max-width: 1200px;
+}
+
+div.single_place {
+    width: 23%;
+}

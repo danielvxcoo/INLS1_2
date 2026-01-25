@@ -1,0 +1,52 @@
+/* 768px */
+
+div.all_places_to_see {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.single_place {
+    width: 48%;
+}
+
+div.single_place img {
+    height: 209px;
+    object-fit: cover;
+}
+
+section.newsletter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.newsletter_box {
+    max-width: 728px;
+    width: 100%;
+}
+
+
+div.all_contact, div.all_comments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 728px;
+}
+
+div.single_contact, div.single_comment {
+    width: 31%;
+    margin-bottom: 0;
+}
+
+div.accordion {
+    width: 100%;
+    max-width: 728px;
+}
+
+section.map iframe {
+    width: 100%;
+    max-width: 728px;
+}
