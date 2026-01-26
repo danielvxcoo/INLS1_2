@@ -92,3 +92,71 @@ function getWeatherData() {
 }
 
 getWeatherData();
+
+function getNextHolidays() {
+    const holidays = [
+        { date: '2026-01-01', name: 'Nowy Rok', desc: 'Pierwszy dzień roku' },
+        { date: '2026-01-12', name: 'Dzień Pełnoletności', desc: 'Osoby kończące 20 lat' },
+        { date: '2026-02-11', name: 'Dzień Założenia Państwa', desc: 'Rocznica założenia Japonii' },
+        { date: '2026-02-23', name: 'Urodziny Cesarza', desc: 'Urodziny cesarza Naruhito' },
+        { date: '2026-03-20', name: 'Dzień Równonocy Wiosennej', desc: 'Początek wiosny' },
+        { date: '2026-04-29', name: 'Dzień Shōwa', desc: 'Urodziny cesarza Shōwa' },
+        { date: '2026-05-03', name: 'Dzień Konstytucji', desc: 'Rocznica konstytucji' },
+        { date: '2026-05-04', name: 'Dzień Zieleni', desc: 'Święto natury' },
+        { date: '2026-05-05', name: 'Dzień Dziecka', desc: 'Święto dzieci' },
+        { date: '2026-07-20', name: 'Dzień Morza', desc: 'Święto morza' },
+        { date: '2026-08-11', name: 'Dzień Gór', desc: 'Święto gór' },
+        { date: '2026-09-21', name: 'Dzień Szacunku dla Starszych', desc: 'Święto osób starszych' },
+        { date: '2026-09-23', name: 'Dzień Równonocy Jesiennej', desc: 'Początek jesieni' },
+        { date: '2026-10-12', name: 'Dzień Sportu', desc: 'Święto sportu' },
+        { date: '2026-11-03', name: 'Dzień Kultury', desc: 'Święto kultury' },
+        { date: '2026-11-23', name: 'Dzień Dziękczynienia za Pracę', desc: 'Święto pracy' }
+    ];
+    
+    const today = new Date();
+    const future = [];
+    
+    for (let i = 0; i < holidays.length; i++) {
+        const holidayDate = new Date(holidays[i].date);
+        if (holidayDate >= today) {
+            future.push(holidays[i]);
+        }
+    }
+    
+    future.sort((a, b) => new Date(a.date) - new Date(b.date));
+
+    return future.slice(0, 3);
+}
+
+function showHolidays() {
+    const box = document.getElementById('holidaysBox');
+    const holidays = getNextHolidays();
+    
+    if (holidays.length === 0) {
+        box.innerHTML = '<p>Brak nadchodzących świąt</p>';
+        return;
+    }
+    
+    let html = '';
+    
+    for (let i = 0; i < holidays.length; i++) {
+        const holiday = holidays[i];
+        const date = new Date(holiday.date);
+        const day = date.getDate();
+        const month = date.getMonth() + 1;
+        const year = date.getFullYear();
+        
+        html += `
+            <div class="holiday-simple">
+                <div class="holiday-date-simple">${day}.${month}.${year}</div>
+                <div class="holiday-name-simple">${holiday.name}</div>
+                <div class="holiday-desc-simple">${holiday.desc}</div>
+            </div>
+        `;
+    }
+    
+    box.innerHTML = html;
+}
+window.addEventListener('DOMContentLoaded', function() {
+    showHolidays();
+});
